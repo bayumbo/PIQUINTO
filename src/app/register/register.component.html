@@ -9,22 +9,28 @@
         <h2>Registro</h2>
     </mat-card-header>
     <mat-card-content>
-        <form class="example-form" [formGroup]="registerform" (ngSubmit)="proceedregister()">
+        <form class="form" [formGroup]="registerform" (ngSubmit)="proceedregister()">
             <mat-form-field class="example-full-width">
               <mat-label>Username</mat-label>
               <input matInput formControlName="id" >
+              <mat-error>Mínimo 5 caracteres y máximo 8, al menos una mayúscula y un número</mat-error>
             </mat-form-field>
-            <mat-form-field class="example-full-width">
+            
+            <mat-form-field class="full-width">
                 <mat-label>Name</mat-label>
-                <input matInput formControlName="name" >
+                <input matInput formControlName="name"  >
+                <mat-error>Mínimo 2 caracteres y máximo 15</mat-error>
               </mat-form-field>
-              <mat-form-field class="example-full-width">
+              <mat-form-field class="full-width">
                 <mat-label>Password</mat-label>
                 <input type="password" matInput formControlName="password" >
+                <mat-error>Mínimo de 8 caracteres y máximo 15, al menos una mayúscula y un número</mat-error>
               </mat-form-field>
-              <mat-form-field class="example-full-width">
+              
+              <mat-form-field class="full-width">
                 <mat-label>Email</mat-label>
                 <input matInput formControlName="email" >
+                <mat-error>Ingrese una contraseña válida</mat-error>           
               </mat-form-field>
               <mat-radio-group formControlName="gender" aria-label="Select an option">
                 <mat-radio-button value="male">Masculino</mat-radio-button>

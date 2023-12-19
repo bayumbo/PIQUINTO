@@ -13,10 +13,12 @@
             <mat-form-field class="example-full-width">
               <mat-label>Username</mat-label>
               <input matInput formControlName="id" >
+              <mat-error>Mínimo 5 caracteres y máximo 8, al menos una mayúscula y un número</mat-error>
             </mat-form-field>
               <mat-form-field class="example-full-width">
                 <mat-label>Password</mat-label>
                 <input matInput type="password" formControlName="password" >
+                <mat-error>Mínimo de 8 caracteres y máximo 15, al menos una mayúscula y un número</mat-error>
               </mat-form-field>
               <div>
                 <button mat-raised-button type="submit">Iniciar Sesión</button>

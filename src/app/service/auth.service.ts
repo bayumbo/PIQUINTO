@@ -10,6 +10,12 @@ export class AuthService {
 
   }
   apiurl='http://localhost:3000/user';
+  
+  checkIfUserExists(name:any) {
+    const url = `${this.apiurl}/checkIfUserExists/${name}`;
+    return this.http.get<boolean>(url);
+  }
+  
 
   RegisterUser(inputdata:any){
     return this.http.post(this.apiurl,inputdata)

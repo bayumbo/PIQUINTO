@@ -92,15 +92,6 @@
       "gender": "male",
       "role": "",
       "isactive": false
-    },
-    {
-      "id": "bryanale",
-      "name": "Bryan",
-      "password": "Pedazosdemiel_1",
-      "email": "cybbryan@gmail.com",
-      "gender": "male",
-      "role": "",
-      "isactive": false
     }
   ],
   "role": [
