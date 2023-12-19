@@ -1,0 +1,259 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+*{
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/*MENU----------------------------------------------*/
+
+.main-header{
+  background: #a49883;
+  width: 100%;
+  height:50px;
+}
+
+nav{
+  position: absolute;
+  left:0;
+  top:0;
+  width: 200px;
+  top:50px;
+  height:calc(100vh - 50px);
+  background:#B0A695;
+  transform:translateX(-100%);
+  transition:.4s ease;
+}
+
+.navigation li{
+  list-style:none;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.navigation a{
+  color:var(--main-color);
+  display: block;
+  line-height:3.5;
+  padding: 0 10px;
+  text-decoration:none;
+  transition:.4s ease;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.navigation a:hover{
+  box-shadow: inset 400px 0 0 0 #695138;
+}
+
+#btn-nav{
+  display: none;
+}
+
+#btn-nav:checked ~ nav{
+  transform:translateX(0);
+}
+
+.btn-nav{
+  color:var(--main-color);
+  font-size:30px;
+  position: absolute;
+  left:0;
+  top:0;
+  cursor:pointer;
+  padding:6.5px 15px;
+  transition:.2s ease;
+  background:rgba(0,0,0,.1);
+}
+
+.btn-nav:hover{
+  background:rgba(0,0,0,.3);
+  
+}
+
+/*CONTENEDOR----------------------------------------------*/
+
+.container {
+  display: flex;
+  height: 100vh;
+  
+  
+}
+
+.content {
+  flex: 1;
+  padding: 3% 10% 10% 10% ;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: grid;
+  align-items: center;
+  margin-bottom: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20%;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 7px;
+  width: auto;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: rgba(175, 175, 175, 0.142);
+  margin-right: 20%;
+
+}
+
+.search-box select {
+  width: auto;
+
+}
+/*IMPUT SEGGESTIONS----------------------------------------------*/
+
+.sugerencia{
+  margin-left: -50px;
+}
+.sugerencia ut {
+  padding: 8px;
+  width: 250px;
+  margin-bottom: 10px;
+}
+.suggestions {
+  position: relative;
+}
+
+.sugerencia ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  position: absolute;
+  background-color: #fff;
+  z-index: 1;
+  width: calc(100% - 2px);
+  border: solid 1px rgba(0, 0, 0, 0.237);
+
+}
+
+.sugerencia li {
+  padding: 5px;
+  cursor: pointer;
+  border: solid 1px rgba(0, 0, 0, 0.224);
+
+}
+
+.sugerencia li:hover {
+  background-color: #919090;
+}
+/*TABLERO----------------------------------------------*/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-item {
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 15px;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.grid-item:hover{
+  box-shadow: inset 400px 0 0 0 #ffffff;
+
+}
+.grid-item h1{
+font-size: 18px;
+text-align: center;
+margin-top: 20px;
+border-radius: 10px;
+padding: 10px;
+width: 50%;
+color: black;
+}
+.a{
+  background-color: rgb(255, 255, 255);
+}
+.a:hover{
+background-color: rgb(250, 183, 144);
+-webkit-transition: ease-out 0.4s;
+-moz-transition: ease-out 0.4s;
+transition: ease-out 0.4s;
+  }
+.b:hover{
+  background-color: rgb(196, 245, 254);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.c:hover{
+  background-color: rgb(240, 177, 141);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+    }
+    
+.d:hover{
+  background-color: rgb(145, 149, 146);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.e:hover{
+  background-color: rgba(79, 153, 195, 0.757);  
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.f:hover{
+  background-color: rgba(60, 137, 205, 0.757);
+    -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.grid-item img{
+  width: 100%;
+  height: 70%;
+  border-radius: 15px;
+}
+
+@media  (max-width : 900px) {
+  .search-box{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .search-box select{
+    margin-top: -20px;
+    width: 50%;
+  }
+  .search-box input{
+    margin-left: 30%;
+  }
+  .suggestions{
+    width: 50%;
+    margin-left: 32%;
+  }
+}
+@media  (max-width : 900px) {
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20%;
+  }
+
+}
+
+

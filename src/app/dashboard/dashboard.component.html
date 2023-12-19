@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,200"
+    />
+    <title>Dashboard</title>
+  </head>
+  <header class="main-header">
+    <label for="btn-nav" class="btn-nav"
+      ><i class="fas fa-bars">
+        <span class="material-symbols-outlined"> widgets </span>
+      </i></label
+    >
+    <input type="checkbox" id="btn-nav" />
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="">Home</a></li>
+        <li><a href="">Servicios</a></li>
+        <li><a href="">Nosotros</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="search-box">
+          <h1>Conoce tus plataformas</h1>
+          <select (change)="onOptionSelected($event)">
+            <option value="opcion1" disabled selected>
+              Todas las Plataformas
+            </option>
+            <option value="opcion2">Plataforma</option>
+            <option value="opcion2">Plataforma</option>
+            <option value="opcion2">Plataforma</option>
+            <option value="opcion2">Plataforma</option>
+          </select>
+          <div class="sugerencia">
+            <!--<input type="text" placeholder="Escribe aquí..." [(ngModel)]="typedText" (input)="onInputChange()">-->
+            <div *ngIf="showSuggestions" class="suggestions">
+              <ul>
+                <li
+                  *ngFor="let suggestion of filteredSuggestions"
+                  (click)="selectSuggestion(suggestion)"
+                >
+                  {{ suggestion }}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="grid-item" style="background-color: rgb(255, 233, 220)">
+            <img src="../../assets/img/logo1.png" />
+            <a routerLink="/p-eva" routerLinkActive="active-link">
+              <h1 class="a">EVA</h1>
+            </a>
+          </div>
+          <div class="grid-item" style="background-color: rgb(196, 245, 254)">
+            <img src="../../assets/img/logo2.png" />
+            <a routerLink="/panel/p-siga" routerLinkActive="active-link">
+              <h1 class="b">SIGA</h1>
+            </a>
+          </div>
+          <div class="grid-item" style="background-color: rgb(240, 177, 141)">
+            <img src="../../assets/img/logo1.png" />
+            <h1 class="c">IGNUG</h1>
+          </div>
+          <div class="grid-item">
+            <img src="../../assets/img/logo1.png" />
+            <h1 class="d">YEC</h1>
+          </div>
+          <div
+            class="grid-item"
+            style="background-color: rgba(85, 117, 135, 0.757)"
+          >
+            <img src="../../assets/img/logo2.png" />
+            <h1 class="e">SIGA</h1>
+          </div>
+          <div
+            class="grid-item"
+            style="background-color: rgba(72, 168, 252, 0.757)"
+          >
+            <a href="https://yavirac.edu.ec/"></a>
+            <img src="../../assets/img/logo1.png" />
+            <h1 class="f">PAGINA OFICIAL</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

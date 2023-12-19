@@ -1,0 +1,92 @@
+button{
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 252px;
+    color: #540808;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: rgb(140, 132, 125);
+}
+button:hover{
+    background: rgb(140, 132, 125);
+}
+
+/* Estilos generales para el mat-card */
+mat-card {
+    max-width: 400px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: auto; /* Centra el card horizontalmente en la página */
+}
+
+  /* Estilos para el encabezado del mat-card */
+mat-card-header {
+    background-color: #4c7191; /* Color de fondo del encabezado */
+    color: rgb(1, 1, 1); /* Color del texto en el encabezado */
+}
+
+  /* Estilos para el título h2 dentro del encabezado */
+mat-card-header h2 {
+    margin: 0; /* Elimina el margen predeterminado del h2 */
+}
+
+  /* Estilos para el contenido del mat-card */
+mat-card-content {
+    padding: 16px; /* Ajusta el relleno según tus preferencias */
+}
+
+  /* Estilos para el formulario */
+.example-form {
+    display: flex;
+    flex-direction: column;
+}
+
+  /* Estilos para los campos de formulario */
+.example-full-width {
+    width: 100%;
+    margin-top: 10px; /* Ajusta el margen superior según tus preferencias */
+}
+
+  /* Estilos para los botones */
+button {
+    margin-top: 10px; /* Ajusta el margen superior según tus preferencias */
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca la imagen de fondo detrás de otros elementos */
+    overflow: hidden; /* Evita que la imagen de fondo genere barras de desplazamiento */
+}
+
+.background-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+}
+
+.center-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+mat-card {
+    width: 100%;
+    max-width: 400px;
+}
+
+h2{
+    padding: 15px;
+}
+
+
