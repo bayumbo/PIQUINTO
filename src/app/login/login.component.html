@@ -1,33 +1,41 @@
-<div class="background-container">
-  <!-- Aquí va tu imagen -->
-  <img src="../../assets/img/instalacion-Yavirac.png" alt="Descripción de la imagen">
-</div>
-
-<div class="center-container">
-<mat-card>
-    <mat-card-header>
-    <h2>Iniciar Sesion</h2>
-    </mat-card-header>
-    <mat-card-content>
-        <form class="example-form" [formGroup]="loginform" (ngSubmit)="proceedlogin()">
-            <mat-form-field class="example-full-width">
-              <mat-label>Username</mat-label>
-              <input matInput formControlName="id" >
-              <mat-error>Mínimo 5 caracteres y máximo 8, al menos una mayúscula y un número</mat-error>
-            </mat-form-field>
-              <mat-form-field class="example-full-width">
-                <mat-label>Password</mat-label>
-                <input matInput type="password" formControlName="password" >
-                <mat-error>Mínimo de 8 caracteres y máximo 15, al menos una mayúscula y un número</mat-error>
-              </mat-form-field>
-              <div>
-                <button mat-raised-button type="submit">Iniciar Sesión</button>
-                <button routerLink="/register" mat-raised-button type="submit">Registrate</button>
-              </div>
-          </form>
-    </mat-card-content>
-  </mat-card>
-</div>
 
 
+<html>
+<body>
+  <div class="seccion3">
+    <div class="texto-boton3">
+      <img src="../../assets/img/home4.png">
+    </div>
+    <div class="imagen3">
+      <div class="login">
+        <form [formGroup]="loginform" (ngSubmit)="proceedlogin()">
+            <h1>Login</h1>
+            <hr>
+            <label>Email</label>
+            <input matInput formControlName="id" type="email" placeholder="abc@exampl.com">
+            <label>Password</label>
+            <input matInput formControlName="password" type="password" placeholder="enter your password!" >
+            <button type="submit">Submit</button>
+            <p>
+                <a href="#">Forgot Password?</a>
+                <button style="margin-left: -20px;" routerLink="/register" mat-raised-button type="submit">Registrate</button><br>
+
+            </p>
+        </form>
+
+   <!--     <hr>
+                <h3 class="mt-5">Formulario</h3>
+                <pre>Estado Formulario:{{loginForm.valid}}
+                <br>
+                Status:{{loginForm.status}}
+              </pre>
+              <pre>
+                {{loginForm.value | json}}
+              </pre>
+    -->
+    </div>
+      </div>
+  </div> 
+</body>
+</html>
 

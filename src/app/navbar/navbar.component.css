@@ -1,0 +1,118 @@
+.navbar{
+  
+	background-color: #B0A695;
+	   
+
+}
+
+
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+	padding: 0;
+}
+.dropdownmenu ul {
+	list-style: none;
+	width: 100%;
+}
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	width:auto;
+}
+.dropdownmenu a {
+	color: #020202;
+	display: block;
+    font-family: 'Comfortaa', sans-serif;
+    padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+    font-size: 13px;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.dropdownmenu li:hover a {
+	background: #695138;
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 40px;	/* adjust this as per top nav padding top & bottom comes */
+	visibility: visible;
+}
+#submenu li {
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+	background: #B0A695;
+    border-radius: 10px;
+}
+#submenu a {
+	background: #776B5D;
+
+}
+
+
+.botones{
+    padding-right: 3%;
+}
+
+.options ul, .options li {
+	margin: 0;
+	padding: 0;
+}
+.options ul {
+	list-style: none;
+	width: 100%;
+}
+.options li {
+	float: left;
+	position: relative;
+	width:auto;
+}
+.options a {
+	display: block;
+    font-family: 'Comfortaa', sans-serif;	
+    padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+    font-size: 13px;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.options li:hover a {
+	background: #695138;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+.btn1{
+    color: rgb(0, 0, 0);
+    margin-right: 7px;
+}
+.btn2{
+    border: 1px solid black; 
+    background-color: rgb(43, 39, 39);
+    color: white;
+}
+
+@media  (max-width : 900px) {
+	.navbar{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);	
+}
+	}

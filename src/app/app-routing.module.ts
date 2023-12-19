@@ -17,8 +17,8 @@ const routes: Routes = [
  {component:UserComponent,path:'user',canActivate:[AuthGuard]},
  {component:CustomerComponent,path:'customer',canActivate:[AuthGuard]},
  {path:'panel', component:DashboardComponent},
- {path:'p-siga', component: PSigaComponent},
- {path:'p-eva', component: PEvaComponent}
+ {path:'panel/p-siga', component: PSigaComponent},
+ {path:'panel/p-eva', component: PEvaComponent}
 
 ];
 
