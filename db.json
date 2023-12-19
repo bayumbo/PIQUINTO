@@ -76,24 +76,6 @@
       "isactive": true
     },
     {
-      "id": "ALEBTH",
-      "name": "Alejandro",
-      "password": "1722525944",
-      "email": "cybbryan@gmail.com",
-      "gender": "male",
-      "role": "user",
-      "isactive": true
-    },
-    {
-      "id": "murderbt",
-      "name": "Alejandro",
-      "password": "Pedazosdemiel1",
-      "email": "cybbryan@gmail.com",
-      "gender": "male",
-      "role": "",
-      "isactive": false
-    },
-    {
       "id": "bryanale",
       "name": "Bryan",
       "password": "Pedazosdemiel_1",

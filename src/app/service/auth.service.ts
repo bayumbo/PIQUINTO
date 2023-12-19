@@ -29,6 +29,9 @@ export class AuthService {
   updateuser(id:any,inputdata:any){
     return this.http.put(this.apiurl+'/'+id,inputdata);
   }
+  deleteuser(inputdata:any){
+    return this.http.delete(this.apiurl+'/'+inputdata)
+  }
   getuserrole(){
     return this.http.get('http://localhost:3000/role');
   }

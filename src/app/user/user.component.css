@@ -1,0 +1,58 @@
+/* styles.css */
+
+.centered-heading {
+    text-align: center;
+}
+
+mat-card-header {
+    background-color: #2fe3ad; /* Color de fondo del encabezado */
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    text-align: center;
+}
+
+mat-card-content {
+    padding: 20px;
+}
+
+.mat-elevation-z8 {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2; /* Color de fondo de las celdas del encabezado */
+}
+
+td {
+    font-size: 14px;
+}
+
+.active {
+    color: #4CAF50; /* Color para usuarios activos */
+}
+
+.inactive {
+    color: #F44336; /* Color para usuarios inactivos */
+}
+
+button {
+    margin-right: 10px;
+}
+
+  /* Estilos específicos para los botones */
+mat-paginator {
+    margin-top: 20px;
+}

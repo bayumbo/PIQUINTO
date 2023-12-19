@@ -1,0 +1,62 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Color de fondo de la página */
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2196F3; /* Color de fondo de la barra de herramientas */
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar img {
+    margin-right: 10px;
+}
+
+.toolbar span {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.toolbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.toolbar a:hover {
+    color: #FFC107; /* Cambio de color al pasar el ratón sobre el enlace */
+}
+
+.toolbar .spacer {
+    flex-grow: 1;
+}
+
+.button {
+    background-color: #3eddbb; /* Color del botón */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #34a584; /* Cambio de color al pasar el ratón sobre el botón */
+}
+
+.content {
+    padding: 20px;
+    box-sizing: border-box;
+}
